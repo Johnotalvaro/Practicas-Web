@@ -1,0 +1,21 @@
+* {
+    font-family: 'Titillium Web', sans-serif;
+    font-style: italic;
+}
+
+body {
+    background-color: #f5f5dc;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.nav-link:hover {
+    color: #9d4edd;
+}
+
+.form-control:focus {
+    border: #9d4edd;
+    outline: 4px solid #9d4edd;
+}

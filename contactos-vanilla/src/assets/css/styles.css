@@ -1,0 +1,258 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: italic;
+}
+
+body {
+    overflow: auto;
+    background-color: #222;
+}
+
+main {
+    overflow: auto;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilos de navegación */
+
+.nav {
+    flex: 5;
+    width: 100%;
+    justify-content: space-between;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+
+.logo {
+    flex: 5;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #f5f5dc;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.navItems {
+    display: flex;
+    justify-content: center;
+}
+
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navItems li a {
+    font-size: 20px;
+    color: #f5f5dc;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+
+.navItems li a:hover {
+    color: #9d4edd;
+}
+
+/* Estilos de sección y artículos */
+
+section {
+    display: flex;
+}
+
+.article1 {
+    flex: 6;
+    padding: 50px;
+}
+
+.article2 {
+    flex: 6;
+}
+
+#imageMain {
+    position: relative;
+    border-radius: 10px;
+    top: 42px;
+    width: 100%;
+}
+
+/* Estilos de formulario */
+
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+.inputField {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin: 45px 0;
+    border: 2px solid #f5f5dc;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #f5f5dc;
+}
+
+input {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    font-size: 1.3em;
+    color: #222;
+    background: #f5f5dc;
+}
+
+label {
+    width: 75px;
+    text-align: center;
+    color: #f5f5dc;
+}
+
+.buttons {
+    display: flex;
+    grid-row: auto;
+}
+
+#btnSubmit {
+    flex: 6;
+    padding: 5px;
+    justify-content: center;
+    margin: 10px;
+    font-size: 1.3em;
+    color: #000000;
+    background: #f5f5dc;
+    border: 2px #222;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#btnCancel {
+    flex: 6;
+    padding: 5px;
+    justify-content: center;
+    margin: 10px;
+    font-size: 1.3em;
+    color: #000000;
+    background: #f5f5dc;
+    border: 2px #222;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#btnSubmit:hover {
+    background-color: #9d4edd;
+}
+
+#btnCancel:hover {
+    background-color: #d33030;
+}
+
+/* Estilos de pie de página */
+
+footer {
+    width: 100%;
+    background-color: #f5f5dc;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #222;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 620px) {
+    
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .abrir-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: #f5f5dc;
+        border-radius: 6px;
+        align-items: end;
+    } 
+
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: #f5f5dc;
+        border-radius: 6px;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navItems {
+        flex-direction: column;
+        align-items: end;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #f5f5dc;
+    }
+
+    .navItems li a {
+        color: #222;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
